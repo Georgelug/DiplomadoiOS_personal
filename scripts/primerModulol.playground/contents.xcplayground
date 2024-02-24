@@ -14,5 +14,6 @@
         <page name='experiment_enums'/>
         <page name='enums'/>
         <page name='funciones-metodos'/>
+        <page name='closures'/>
     </pages>
 </playground>
