@@ -8,5 +8,10 @@
         <page name='Untitled Page'/>
         <page name='ciclos2'/>
         <page name='serpientes_y_escaleras'/>
+        <page name='ooptional'/>
+        <page name='cclases-structs-enums'/>
+        <page name='structs'/>
+        <page name='experiment_enums'/>
+        <page name='Untitled Page 5'/>
     </pages>
 </playground>
