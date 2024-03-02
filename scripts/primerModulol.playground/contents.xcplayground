@@ -15,5 +15,7 @@
         <page name='enums'/>
         <page name='funciones-metodos'/>
         <page name='closures'/>
+        <page name='protocolos'/>
+        <page name='functional programing'/>
     </pages>
 </playground>
