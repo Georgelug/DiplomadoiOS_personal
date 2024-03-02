@@ -8,7 +8,7 @@ import Foundation
 // Class
 
 // Tablas
-protocol TabularDataSource {
+protocol TabularDataSource : CustomStringConvertible {
     
     var numberOfRow: Int { get }
     var numberOfColumns: Int { get }
@@ -18,7 +18,7 @@ protocol TabularDataSource {
     
 }
 
-func printTable(_ dataSource: TabularDataSource){
+func printTable(_ dataSource: TabularDataSource & CustomStringConvertible){
     var headerRow = "|"
     var columnWidths = [Int]()
     
@@ -58,7 +58,7 @@ struct Person{
 }
 
 
-struct Department: TabularDataSource{
+struct Department: TabularDataSource {
     let name: String
     var people: [Person]
     
@@ -90,14 +90,29 @@ struct Department: TabularDataSource{
         
     }
     
+    
+    
+}
+
+extension Department: CustomStringConvertible{
+    var description: String{
+        return "\(name):\n \(people.reduce(""){"\($0) \($1)\n"})"
+    }
 }
 
 var department = Department(name: "Engineering", people: [])
 
 for element in data{
-    department.add(Person(name: element[0], age: Int(element[1]), vacationDays: Int(element[2])))
+    department.add(Person(name: element[0], age: Int(element[1]) ?? 0, vacationDays: Int(element[2]) ?? 0))
 }
 
+// formas para castear
+let operationalDataSource: TabularDataSource = Department(name: "HR", people: [])
+let hrDepartment = department as Department
 
-printTable(department)
+// formas para validar el tipo de dato
+operationalDataSource is Department
+
+//printTable(department)
+print(department)
 //: [Next](@next)

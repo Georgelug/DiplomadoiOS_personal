@@ -17,5 +17,7 @@
         <page name='closures'/>
         <page name='protocolos'/>
         <page name='functional programing'/>
+        <page name='extensions'/>
+        <page name='genericos'/>
     </pages>
 </playground>
