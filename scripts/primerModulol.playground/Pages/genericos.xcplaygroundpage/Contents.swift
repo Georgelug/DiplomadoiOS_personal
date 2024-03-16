@@ -28,10 +28,23 @@ struct Stack<TElement>{
 //    }
     
 }
+//
+//protocol IteratorProtocol{
+//    associatedtype Element
+//    mutating func next() -> Element?
+//}
 
 extension Stack : CustomStringConvertible{
     var description: String{
         return "[\(items.reduce(""){"\($0) , \($1)"})]"
+    }
+}
+
+struct StackIterator<T>: IteratorProtocol{
+    var stack: Stack<T>
+    
+    mutating func next() -> T?{
+        return stack.pop()
     }
 }
 
