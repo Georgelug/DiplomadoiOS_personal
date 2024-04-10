@@ -20,14 +20,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var slideB: UISlider!
     @IBOutlet weak var labelB: UILabel!
     
+    @IBOutlet weak var viewReset: UIView!
+    
     private var color = UIColor(red:0, green: 0,blue: 0,alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         resetRangesOfSliders()
-        resetValuesOfLabels()
+        setValuesOfLabels()
         view.backgroundColor = getColor()
+        viewReset.backgroundColor = view.backgroundColor
     }
     
     @IBAction func setLabelsAndBackGround(){
@@ -39,6 +42,15 @@ class ViewController: UIViewController {
     
     @IBAction func setBackGround(){
         view.backgroundColor = getColor()
+        viewReset.backgroundColor = view.backgroundColor
+    }
+    
+    @IBAction func resetBackGroundMixer(){
+        resetValuesOfLabels()
+        resetValuesOfSliders()
+        
+        view.backgroundColor = getColor()
+        viewReset.backgroundColor = view.backgroundColor
     }
     
     private func resetRangesOfSliders(){
@@ -48,9 +60,21 @@ class ViewController: UIViewController {
         }
     }
     
+    private func setValuesOfLabels(){
+        labelR.text = String(slideR.value)
+        labelG.text = String(slideG.value)
+        labelB.text = String(slideB.value)
+    }
+    
     private func resetValuesOfLabels(){
-        [labelR, labelG, labelB].forEach{
-            $0?.text = "0"
+        labelR.text = String(0.5)
+        labelG.text = String(0.5)
+        labelB.text = String(0.5)
+    }
+    
+    private func resetValuesOfSliders(){
+        [slideR, slideG, slideB].forEach{
+            $0?.value = 0.5
         }
     }
     
