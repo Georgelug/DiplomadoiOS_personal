@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ShoppingAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VeggieLand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPM-T2-nZB">
+                    <rect key="frame" x="16" y="75" width="361" height="36"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HeX-Af-0nK">
+                    <rect key="frame" x="8" y="119" width="377" height="691"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" id="v6n-UE-nVG">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="115.33333333333333"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="881-tl-FDn">
+                                    <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="115.33333333333333"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🥕 Carrot"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="4hu-u4-knY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1n-IE-9CW">
+                                    <rect key="frame" x="188.66666666666663" y="0.0" width="188.33333333333337" height="115.33333333333333"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🧅 Onion"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="0gC-1b-ORf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="PVR-cl-mdt"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dEW-Qp-GLA">
+                            <rect key="frame" x="0.0" y="115.33333333333334" width="377" height="115"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5On-Cx-Ui1">
+                                    <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="115"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🍆 Eggplant"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="7SJ-Ns-nz1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygk-8r-6wQ">
+                                    <rect key="frame" x="188.66666666666663" y="0.0" width="188.33333333333337" height="115"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🧄 Garlic"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="efs-K5-dG1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Af2-LO-cKM">
+                            <rect key="frame" x="0.0" y="230.33333333333334" width="377" height="115.33333333333334"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvo-3F-k6S">
+                                    <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="115.33333333333333"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" 🥦 Broccoli"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="tzN-dC-dM3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of7-ab-xry">
+                                    <rect key="frame" x="188.66666666666663" y="0.0" width="188.33333333333337" height="115.33333333333333"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🥬 Lettuce"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="ZBL-2m-hVo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bct-U0-OCP">
+                            <rect key="frame" x="0.0" y="345.66666666666669" width="377" height="115"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtN-gf-zRa">
+                                    <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="115"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🍅 Tomato"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="3f0-LP-rd4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5U-Ls-6TK">
+                                    <rect key="frame" x="188.66666666666663" y="0.0" width="188.33333333333337" height="115"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🥑 Avocato"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="wNv-QL-kdN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lw1-tq-0cP">
+                            <rect key="frame" x="0.0" y="460.66666666666657" width="377" height="115.33333333333331"/>
+                            <subviews>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-bH-yxt">
+                                    <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="115.33333333333333"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🥒 Cucumber"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="q4U-vJ-LPh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0K-2M-jQW">
+                                    <rect key="frame" x="188.66666666666663" y="0.0" width="188.33333333333337" height="115.33333333333333"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="🌶️ Chilli"/>
+                                    <connections>
+                                        <action selector="itemBtn:" destination="-1" eventType="touchUpInside" id="rQl-is-XAV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liN-tb-8tj">
+                            <rect key="frame" x="0.0" y="576" width="377" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="liN-tb-8tj" secondAttribute="height" multiplier="377:115" id="oAL-AC-SYB"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Buy" cornerStyle="capsule"/>
+                            <connections>
+                                <action selector="checkOut:" destination="-1" eventType="touchUpInside" id="QVv-tc-wIy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HeX-Af-0nK" secondAttribute="bottom" constant="8" id="05r-Nq-prG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HeX-Af-0nK" secondAttribute="trailing" constant="8" id="Lxq-oW-RLM"/>
+                <constraint firstItem="HeX-Af-0nK" firstAttribute="top" secondItem="WPM-T2-nZB" secondAttribute="bottom" constant="8" id="NNc-nZ-LR2"/>
+                <constraint firstItem="HeX-Af-0nK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="NVm-zh-tsI"/>
+                <constraint firstItem="WPM-T2-nZB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="PZj-Mi-qgs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WPM-T2-nZB" secondAttribute="trailing" constant="16" id="W8g-Tw-jbi"/>
+                <constraint firstItem="WPM-T2-nZB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oKI-1C-AQw"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
