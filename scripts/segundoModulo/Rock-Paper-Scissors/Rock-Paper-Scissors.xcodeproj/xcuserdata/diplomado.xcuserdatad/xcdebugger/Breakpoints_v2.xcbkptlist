@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "103C45E7-8FF6-4C9D-8A4E-D88D5032547D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96AF72F8-F8E8-4472-B754-92D28FA6384B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rock-Paper-Scissors/config/configViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "start(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "96AF72F8-F8E8-4472-B754-92D28FA6384B - 234331f6545b959f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.configViewController.start(Any) -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/config/configViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "96AF72F8-F8E8-4472-B754-92D28FA6384B - 234331f6545b959f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.configViewController.start(Any) -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/config/configViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BB4D3FF-CD40-4275-B7B5-A27DA8F808D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rock-Paper-Scissors/game/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getWiner2()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BB4D3FF-CD40-4275-B7B5-A27DA8F808D6 - 4a3817c3c164dbe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.GameViewController.getWiner() -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/game/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "4BB4D3FF-CD40-4275-B7B5-A27DA8F808D6 - 4a3817c3c164db89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.GameViewController.getWiner() -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/game/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DBDF376-C085-4E94-97CC-EB68466A536A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rock-Paper-Scissors/game/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getWiner2()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DBDF376-C085-4E94-97CC-EB68466A536A - 4a3817c3c164db4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.GameViewController.getWiner() -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/game/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "2DBDF376-C085-4E94-97CC-EB68466A536A - 4a3817c3c164daae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.GameViewController.getWiner() -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/game/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "908">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F867F2B-D470-4FEF-BD96-8D01F8564366"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rock-Paper-Scissors/game/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "getWiner2()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F867F2B-D470-4FEF-BD96-8D01F8564366 - 4a3817c3c164da75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.GameViewController.getWiner() -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/game/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "912">
+               </Location>
+               <Location
+                  uuid = "3F867F2B-D470-4FEF-BD96-8D01F8564366 - 4a3817c3c164da54"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rock_Paper_Scissors.GameViewController.getWiner() -&gt; ()"
+                  moduleName = "Rock-Paper-Scissors"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Desktop/diplo/scripts/segundoModulo/Rock-Paper-Scissors/Rock-Paper-Scissors/game/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1408">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9569592C-F7A1-407A-B148-B3CBF5692D95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rock-Paper-Scissors/game/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "setComputerLabel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B418997F-173E-4254-88CE-1BC980C01F36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rock-Paper-Scissors/game/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "setComputerLabel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
