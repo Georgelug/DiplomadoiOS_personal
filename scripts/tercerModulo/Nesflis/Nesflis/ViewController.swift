@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 500
     }
 
 
@@ -34,7 +34,7 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model.getArrayOfGenre(genre: genres[section]).count
+        1
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
