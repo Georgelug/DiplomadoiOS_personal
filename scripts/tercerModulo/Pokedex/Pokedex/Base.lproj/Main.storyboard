@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yti-cd-fVL">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokelist-->
+        <scene sceneID="6sU-do-RG2">
+            <objects>
+                <viewController id="q42-Pw-ndX" customClass="PokeListViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHa-lY-9zA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RU9-6j-DM6">
+                                <rect key="frame" x="8" y="75" width="377" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableFooterView" contentMode="redraw" id="wLj-Wp-6yz">
+                                    <rect key="frame" x="0.0" y="0.0" width="377" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="q42-Pw-ndX" id="4XE-LF-ENf"/>
+                                    </connections>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xCw-Af-zYd"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="RU9-6j-DM6" firstAttribute="leading" secondItem="xCw-Af-zYd" secondAttribute="leading" constant="8" id="V0v-0w-J7N"/>
+                            <constraint firstItem="xCw-Af-zYd" firstAttribute="bottom" secondItem="RU9-6j-DM6" secondAttribute="bottom" constant="16" id="d7v-z4-ckO"/>
+                            <constraint firstItem="xCw-Af-zYd" firstAttribute="trailing" secondItem="RU9-6j-DM6" secondAttribute="trailing" constant="8" id="rkb-SC-ed8"/>
+                            <constraint firstItem="RU9-6j-DM6" firstAttribute="top" secondItem="xCw-Af-zYd" secondAttribute="top" constant="16" id="zoa-ES-PY3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pokelist" image="list.bullet.clipboard" catalog="system" selectedImage="list.bullet.clipboard.fill" id="0VB-2w-KzT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQA-U0-gRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="-699"/>
+        </scene>
+        <!--PokeTypes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-ts-ofZ">
+                                <rect key="frame" x="8" y="75" width="377" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="djG-6q-7Gt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="reI-sl-qtH">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Zl-m9-MyX">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="gYP-ts-ofZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Ktv-7k-G7V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gYP-ts-ofZ" secondAttribute="trailing" constant="8" id="Tnt-1v-Fkq"/>
+                            <constraint firstItem="gYP-ts-ofZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="VPt-VK-Hq0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gYP-ts-ofZ" secondAttribute="bottom" constant="16" id="xmV-4S-GTz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PokeTypes" image="lizard" catalog="system" selectedImage="lizard.fill" id="tyG-Fs-GgX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.60305343511448" y="-2.1126760563380285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nuh-vi-pgi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yti-cd-fVL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d6K-h4-S0Q">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WLj-3N-Fi4"/>
+                        <segue destination="sCn-0l-Pot" kind="relationship" relationship="viewControllers" id="B58-Ig-CMd"/>
+                        <segue destination="q42-Pw-ndX" kind="relationship" relationship="viewControllers" id="VUU-PD-wzR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ia8-4b-2Ku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="YMf-WI-zvQ">
+            <objects>
+                <viewController id="sCn-0l-Pot" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="57c-sf-V99">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X2X-1P-gRB">
+                                <rect key="frame" x="8" y="75" width="377" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableFooterView" contentMode="redraw" id="V3L-Cn-rHn">
+                                    <rect key="frame" x="0.0" y="0.0" width="377" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="sCn-0l-Pot" id="eiG-Rl-qeq"/>
+                                    </connections>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CHB-3J-p3I"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="CHB-3J-p3I" firstAttribute="trailing" secondItem="X2X-1P-gRB" secondAttribute="trailing" constant="8" id="2C5-8Y-wCD"/>
+                            <constraint firstItem="X2X-1P-gRB" firstAttribute="top" secondItem="CHB-3J-p3I" secondAttribute="top" constant="16" id="AZw-Rh-FIz"/>
+                            <constraint firstItem="X2X-1P-gRB" firstAttribute="leading" secondItem="CHB-3J-p3I" secondAttribute="leading" constant="8" id="Esf-FE-KyY"/>
+                            <constraint firstItem="CHB-3J-p3I" firstAttribute="bottom" secondItem="X2X-1P-gRB" secondAttribute="bottom" constant="16" id="bvk-Yh-L1d"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="star" catalog="system" selectedImage="star.fill" id="dEI-JL-d7b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Src-Em-8H2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="818"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
+        <image name="list.bullet.clipboard.fill" catalog="system" width="98" height="128"/>
+        <image name="lizard" catalog="system" width="128" height="113"/>
+        <image name="lizard.fill" catalog="system" width="128" height="112"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
