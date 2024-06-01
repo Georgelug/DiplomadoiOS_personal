@@ -9,13 +9,21 @@ import UIKit
 
 class TypeInfoViewController: UIViewController {
 
+    @IBOutlet weak var info: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
+    var pokeType : PokeType = .agua
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setDetail()
         // Do any additional setup after loading the view.
     }
 
-
+    func setDetail(){
+        info.text = "Information: \(pokeType.description)"
+        image.image = UIImage(named: pokeType.image)
+    }
     /*
     // MARK: - Navigation
 

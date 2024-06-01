@@ -12,7 +12,7 @@ class PokeListTableViewCell: UITableViewCell {
     @IBOutlet weak var pokeName: UILabel!
     @IBOutlet weak var pokeNumber: UILabel!
     
-    var pokemon = Pokemon(name: "", type: .agua, image: "", description: "", number: 0)
+    var pokemon = Pokemon(name: "", type: .agua, weaknesses: [.fuego], image: "", description: "", number: 0)
     
     override func awakeFromNib() {
         super.awakeFromNib()
